@@ -1,0 +1,114 @@
+/* PostCard Component Styles - Professional, Clean Slate Theme */
+
+.post-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  text-align: left;
+}
+
+.post-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: #cbd5e1;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.post-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-full);
+  background-color: #f1f5f9;
+  color: #334155;
+  font-weight: 700;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e2e8f0;
+  flex-shrink: 0;
+}
+
+.post-author-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.post-author-name-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.post-author-name {
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--text-primary);
+}
+
+.post-author-handle {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.post-timestamp {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.post-tag {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 3px 8px;
+  background-color: #f8fafc;
+  color: #475569;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius-sm);
+}
+
+.post-body {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.post-title {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.post-text {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.post-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 12px;
+  border-top: 1px solid #f1f5f9;
+  margin-top: 4px;
+}
+
+.post-footer-hint {
+  font-size: 12px;
+  color: var(--text-muted);
+}

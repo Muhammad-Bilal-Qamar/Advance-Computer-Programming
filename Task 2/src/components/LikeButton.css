@@ -1,0 +1,150 @@
+/* LikeButton Component Styles - Clean, Modern & Professional (No neon) */
+
+.like-btn-container {
+  display: inline-flex;
+  align-items: center;
+}
+
+.like-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: inherit;
+  font-weight: 600;
+  border-radius: 9999px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  user-select: none;
+  text-decoration: none;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.05);
+}
+
+.like-btn:focus-visible {
+  outline: 2px solid #64748b;
+  outline-offset: 2px;
+}
+
+/* Sizing Variants */
+.like-btn-small .like-btn {
+  padding: 6px 12px;
+  font-size: 13px;
+}
+.like-btn-small .like-btn-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.like-btn-medium .like-btn {
+  padding: 9px 18px;
+  font-size: 15px;
+}
+.like-btn-medium .like-btn-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.like-btn-large .like-btn {
+  padding: 12px 24px;
+  font-size: 17px;
+}
+.like-btn-large .like-btn-icon {
+  width: 22px;
+  height: 22px;
+}
+
+/* Style Variants - Clean Warm Rose / Neutral tones (Non-neon) */
+.like-btn--filled {
+  background-color: #e11d48;
+  color: #ffffff;
+  border-color: #be123c;
+}
+.like-btn--filled:hover {
+  background-color: #be123c;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(225, 29, 72, 0.2);
+}
+.like-btn--filled:active {
+  background-color: #9f1239;
+  transform: translateY(0);
+}
+
+.like-btn--outlined {
+  background-color: #ffffff;
+  color: #e11d48;
+  border-color: #fecdd3;
+}
+.like-btn--outlined:hover {
+  background-color: #fff1f2;
+  border-color: #fda4af;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(225, 29, 72, 0.1);
+}
+.like-btn--outlined:active {
+  background-color: #ffe4e6;
+  transform: translateY(0);
+}
+
+.like-btn--subtle {
+  background-color: #f1f5f9;
+  color: #334155;
+  border-color: #e2e8f0;
+}
+.like-btn--subtle:hover {
+  background-color: #e2e8f0;
+  color: #0f172a;
+  transform: translateY(-1px);
+}
+.like-btn--subtle .like-btn-icon {
+  color: #e11d48;
+}
+
+/* Counter Badge */
+.like-btn-counter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  font-size: 0.88em;
+  font-weight: 700;
+  min-width: 20px;
+  text-align: center;
+}
+
+.like-btn--filled .like-btn-counter {
+  background-color: rgba(255, 255, 255, 0.22);
+  color: #ffffff;
+}
+
+.like-btn--outlined .like-btn-counter {
+  background-color: #ffe4e6;
+  color: #be123c;
+}
+
+.like-btn--subtle .like-btn-counter {
+  background-color: #ffffff;
+  color: #334155;
+  border: 1px solid #cbd5e1;
+}
+
+/* Micro-interaction bounce */
+.like-btn.is-bouncing {
+  animation: heartBounce 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.like-btn.is-bouncing .like-btn-icon {
+  animation: heartPulse 0.3s ease-in-out;
+}
+
+@keyframes heartBounce {
+  0% { transform: scale(1); }
+  50% { transform: scale(0.94); }
+  100% { transform: scale(1); }
+}
+
+@keyframes heartPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+  100% { transform: scale(1); }
+}
